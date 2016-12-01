@@ -1,0 +1,1 @@
+gcc main.c myfun.c -o main, gcc *.c -o main or gcc -o main *.c
