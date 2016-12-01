@@ -1,0 +1,12 @@
+1. Add the Mingw path to environment:
+D:\MingW\bin
+
+2. go to the source code
+cd c:\sources\hello
+
+3. comple like this:
+gcc helloworld.c -o helloworld.exe
+
+
+
+more information: http://www.mingw.org/wiki/mingw_for_first_time_users_howto
