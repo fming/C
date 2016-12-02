@@ -1,0 +1,20 @@
+$ rmbbuildc 
+      RMB-UX Compiled Subprogram File Generator (Version 12.3)
+
+Stream file name: my_csub.st
+
+Output BASIC PROG2 file name: my_csub
+CSUB shared library name(s): libmy_csub.so
+
+Module name:
+  CSUB name: My_func_1
+    Parameter name: Ret
+      Parameter type (I/R/C for Integer/Real/Complex): R
+      Is this an array? (y/n): n
+      Is this an optional parameter? (y/n): n
+    Parameter name: 
+
+    Is there COM in this CSUB? (y/n): n
+
+  CSUB name: 
+Are there any more modules? (y/n): n
