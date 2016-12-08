@@ -23,8 +23,8 @@ dev: all
 $(TARGET): CFLAGS += -fPIC
 
 $(TARGET): build $(OBJECTS)
-	ar ras $@ $(OBJECTS)
-	ran lib $@
+	ar rcs $@ $(OBJECTS)
+	ranlib $@
 
 $(SO_TARGET): $(TARGET) $(OBJECTS)
 	$(CC) -shared -o $@ $(OBJECTS)
@@ -55,4 +55,9 @@ install: all
 	install $(TARGET) $(DESTDIR)/$(PREFIX)/lib/
 
 # The Checker
-
+BADFUNCS='[^_.>a-zA-Z0-9](str(n?cpy|n?cat|xfrm|n?dup|str|pbrk|tok|_)|stpn?cpy|a?sn?printf|byte_)'
+check:
+	@echo Files with potentially dangerous functions.
+	@egrep $(BADFUNCS) $(SOURCES) || true
+	
+	

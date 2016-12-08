@@ -23,8 +23,8 @@ dev: all
 $(TARGET): CFLAGS += -fPIC
 
 $(TARGET): build $(OBJECTS)
-	ar ras $@ $(OBJECTS)
-	ran lib $@
+	ar rcs $@ $(OBJECTS)
+	ranlib $@
 
 $(SO_TARGET): $(TARGET) $(OBJECTS)
 	$(CC) -shared -o $@ $(OBJECTS)
