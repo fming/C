@@ -6,6 +6,8 @@ s9:	s9.c
 	$(CC) s9.c -o s9
 s14: s14.c	
 	$(CC) s14.c -o s14
+debug: debug.c	
+	$(CC)  $(CFLAGS) debug.c -o test
 s15: s15.c
 	$(CC) s15.c -o s15		
 s16:
