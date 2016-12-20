@@ -1,0 +1,31 @@
+two files:
+fred.c, bill
+
+use -c to create target files. 
+$ gcc -c bill.c fred.c
+$ ls *.o
+bill.o fred.o
+
+create a head file:
+lib.h
+
+create out program.c
+
+$ gcc -c program.c
+$ gcc -o program program.o bill.o
+$ ./program
+
+bill: we passed hello world.
+
+Now we are going to create and use a lib file
+$ ar crv libfoo.a bill.o fred.o
+
+ranlib is not must for GNU, but not hurt.
+$ ranlib libfoo.a
+
+$ gcc -o program program.o libfoo.a
+
+you can also use -l to access libraries.
+$ gcc -o program program.o -L. -lfoo
+-L. tell the compiler find library from current directory "."
+-lfoo tell the compiler find libary libfoo.a or libfoo.so
