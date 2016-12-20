@@ -29,3 +29,23 @@ you can also use -l to access libraries.
 $ gcc -o program program.o -L. -lfoo
 -L. tell the compiler find library from current directory "."
 -lfoo tell the compiler find libary libfoo.a or libfoo.so
+
+				UNIX			Windows
+object files	func.o			FUNC.OBJ
+staic lib		lib.a			LIB.LIB
+program			program			PROGRAM.EXE
+
+
+shared library:
+example: /usr/lib/libm.so
+ld-lsb.so.2  (2 represent the version)
+
+we can use tool, "ldd" to check the shared libs
+
+$ man gcc
+Space key: next page
+Enter/Return key: next line
+q: exit
+
+more information:
+$info gcc

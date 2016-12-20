@@ -1,0 +1,29 @@
+Shell
+grep & regular expression
+find
+
+Shell: is a program, gap between user and system.
+
+shell(bash, csh), other application, X system around the Kernel.
+
+pipe and redirection
+
+output to two different files
+$ kill -HUP 1234 >lillout.txt 2>killerr.txt
+output to one file
+$ kill -l 1234 >lillouterr.txt 2>&1
+output to the recyle
+$ kill -l 1234 >/dev/null 2>&1
+
+
+pipe:
+$ ps > psout.txt
+$ sort psout.txt > pssort.out
+another vertion,
+$ ps | sort > pssort.out
+
+
+TO BE COTINUE...
+
+
+
