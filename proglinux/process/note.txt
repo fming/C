@@ -1,0 +1,28 @@
+$ ps -ef
+
+TTY: which terminal invoke it?
+TIME: the time this process occupy for CPU until now.
+CMD: the command line that start the process
+
+styem processes
+$ ps ax
+
+PID is 1, it's a special system process to manage other processes
+
+start new process:
+1.system(after finish, will come back) 
+$ make systemc
+
+
+2. exec is a series of functions.  (never back)
+$ gcc -o pexec exec.c
+$ ./pexec
+
+when ps is finished, we are not back to the application, so we don't printout "Done."
+
+
+3. fork (async)
+this seperate to two independant processes. 
+
+4. sync between processes
+
