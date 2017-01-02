@@ -1,7 +1,7 @@
-#ifdef _DArray_h
+#ifndef _DArray_h
 #define _DArray_h
 #include <stdlib.h>
-#inlcude <assert.h>
+#include <assert.h>
 #include <dbg.h>
 
 typedef struct DArray{

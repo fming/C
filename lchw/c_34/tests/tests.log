@@ -1,0 +1,7 @@
+DEBUG tests/darray_tests.c:49: ----- RUNNING: ./tests/darray_tests
+DEBUG tests/darray_tests.c:44: 
+----- test_create
+DEBUG tests/darray_tests.c:45: 
+----- test_new
+DEBUG tests/darray_tests.c:46: 
+----- test_destroy

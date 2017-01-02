@@ -42,9 +42,9 @@ valgrind:
 # The Cleaner
 clean:
 	rm -rf build $(OBJECTS) $(TESTS)
-	rm -f tests/tests.log
+	rm -rf bin $(OBJECTS) $(TESTS)
 	find . -name “*.gc*” -exec rm {} \;
-	rm -rf ‘find . -name “*.DSYM” -print’
+	rm -rf ‘find . -iname “*.DSYM” -print’
 
 # The Install
 install: all
